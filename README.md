@@ -14,11 +14,22 @@ This project uses
 
 - `cd` into the project
 
+- For TV development:
+
 ```sh
 yarn
-yarn prebuild # Executes Expo prebuild with TV modifications
+yarn prebuild:tv # Executes clean Expo prebuild with TV modifications
 yarn ios # Build and run for Apple TV
 yarn android # Build for Android TV
+yarn web # Run the project on web from localhost
+```
+- For mobile development:
+
+```sh
+yarn
+yarn prebuild # Executes Expo prebuild with no TV modifications
+yarn ios # Build and run for iOS
+yarn android # Build for Android mobile
 yarn web # Run the project on web from localhost
 ```
 
