@@ -1,8 +1,5 @@
 # Expo Router TV demo 👋
 
-![Apple TV screen shot](https://github.com/douglowder/examples/assets/6577821/a881466f-a7a0-4c66-b1fc-33235c466997)
-![Android TV screen shot](https://github.com/douglowder/examples/assets/6577821/815c8e01-8275-4cc1-bd57-b9c8bce1fb02)
-
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 This project uses
@@ -21,7 +18,6 @@ yarn
 yarn prebuild:tv # Executes clean Expo prebuild with TV modifications
 yarn ios # Build and run for Apple TV
 yarn android # Build for Android TV
-yarn web # Run the project on web from localhost
 ```
 - For mobile development:
 
@@ -30,6 +26,11 @@ yarn
 yarn prebuild # Executes Expo prebuild with no TV modifications
 yarn ios # Build and run for iOS
 yarn android # Build for Android mobile
+```
+
+- For web development:
+
+```sh
 yarn web # Run the project on web from localhost
 ```
 
@@ -49,10 +50,6 @@ Deploy on all platforms with Expo Application Services (EAS).
 
 - Deploy the website: `npx eas-cli deploy` — [Learn more](https://docs.expo.dev/eas/hosting/get-started/)
 - Deploy on iOS and Android using: `npx eas-cli build` — [Learn more](https://expo.dev/eas)
-
-## TV specific file extensions
-
-This project includes an [example Metro configuration](./metro.config.js) that allows Metro to resolve application source files with TV-specific code, indicated by specific file extensions (`*.ios.tv.tsx`, `*.android.tv.tsx`, `*.tv.tsx`).
 
 ## Get a fresh project
 
