@@ -19,6 +19,11 @@
     "expo": "~55.0.0-preview.10",
     "expo-constants": "~55.0.4",
     "expo-device": "~55.0.6",
+    "expo-dev-client": "./dependencies/expo-dev-client-55.0.5-1771019504673.tgz",
+    "expo-dev-launcher": "./dependencies/expo-dev-launcher-55.0.6-1771019504060.tgz",
+    "expo-dev-menu": "./dependencies/expo-dev-menu-55.0.5-1771019501878.tgz",
+    "expo-dev-menu-interface": "./dependencies/expo-dev-menu-interface-55.0.1-1771019501609.tgz",
+    "expo-updates-interface": "./dependencies/expo-updates-interface-55.1.1-1771019494198.tgz",
     "expo-font": "~55.0.3",
     "expo-glass-effect": "~55.0.5",
     "expo-image": "~55.0.3",
@@ -38,6 +43,24 @@
     "react-native-safe-area-context": "~5.6.2",
     "react-native-screens": "~4.23.0",
     "react-native-web": "~0.21.0"
+  },
+  "expo": {
+    "install": {
+      "exclude": [
+        "expo-dev-client",
+        "expo-dev-launcher",
+        "expo-dev-menu",
+        "expo-dev-menu-interface"
+      ]
+    }
+  },
+  "resolutions": {
+    "expo-dev-client": "./dependencies/expo-dev-client-55.0.5-1771019504673.tgz",
+    "expo-dev-launcher": "./dependencies/expo-dev-launcher-55.0.6-1771019504060.tgz",
+    "expo-dev-menu": "./dependencies/expo-dev-menu-55.0.5-1771019501878.tgz",
+    "expo-dev-menu-interface": "./dependencies/expo-dev-menu-interface-55.0.1-1771019501609.tgz",
+    "expo-updates": "./dependencies/expo-updates-55.0.7-1771019494198.tgz",
+    "expo-updates-interface": "./dependencies/expo-updates-interface-55.1.1-1771019494198.tgz"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
