@@ -34,7 +34,7 @@ export default function AppTabs() {
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="tv_focus">
-        <NativeTabs.Trigger.Label>TV Demo</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Label>Events</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           src={require('@/assets/images/tabIcons/tv.png')}
         />

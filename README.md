@@ -1,14 +1,19 @@
 # Expo Router TV demo 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an Expo project that can be built for Apple TV and Android TV targets, and also supports mobile and web platforms.
 
-This project uses
+In addition to Expo SDK packages, this project uses
 
 - the [React Native TV fork](https://github.com/react-native-tvos/react-native-tvos), which supports both phone (Android and iOS) and TV (Android TV and Apple TV) targets
 - the [React Native TV config plugin](https://github.com/react-native-tvos/config-tv/tree/main/packages/config-tv) to allow Expo prebuild to modify the project's native files for TV builds
 
+The application code is based on the [revamped default project template](https://expo.dev/changelog/sdk-55-beta#revamped-default-project-template) introduced in SDK 55, with modifications and additions to support multiplatform development, including TV.
+
 ## 🚀 How to use
 
+#### Creating a new project
+
+- Create a project: `npx create-expo-app -e with-router-tv`
 - `cd` into the project
 
 - For TV development:
@@ -42,7 +47,7 @@ yarn web # Run the project on web from localhost
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-This project includes a [demo](./components/EventHandlingDemo.tsx) showing how to use React Native TV APIs to highlight controls as the user navigates the screen with the remote control.
+This project includes a [demo](./src/components/tv-event-demo.tsx) showing how to use React Native TV APIs to highlight controls as the user navigates the screen with the remote control.
 
 ## Deploy
 
